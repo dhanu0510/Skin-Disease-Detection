@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disease Predict</title>
+    <style>
+        body{
+            background: linear-gradient(to right, #20d8df, #9153c9);
+        }
+        .header{
+            text-align: center;
+            color: white;
+            background: linear-gradient(to left, #20d8df, #9153c9);
+        }
+
+        .predict{
+            border-radius: 25px;
+            width: 300px;
+        }
+        .container{
+            background-color: white;
+            border: 1px 1px 1px 1px black;
+            border-radius:10px;
+            margin:10px;
+        }
+        .output{
+            background-color: white;
+            text-align: center;
+            box-sizing: border-box;
+            border: 1px solid black;
+            border-radius:10px;
+            box-sizing: border-box;
+        }
+        .output h3{
+            color: red;
+            font-weight:bold;
+        }
+        .share{
+            margin-bottom:10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Skin Disease Detection through Image Processing</h1>
+        </div>
+        <form method=post enctype=multipart/form-data>
+            <div class="form-group">
+                <label for="image">Upload file(JPG and PNG file only)</label>
+                <input type=file name=image class = "form-control">
+            </div>
+            <div class="form-group">
+                <label for="email">Age</label>
+                <input type="number" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label>Sex:</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="sex" id="male">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Male
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="sex" id="female" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Female
+                </label>
+              </div>
+            <br>
+            <button type="submit" class="btn btn-primary predict" name = image>Predict</button>
+            <br>
+            <hr>
+            <div class="form-group output">
+                <h3>{{prediction}}</h3>
+            </div>
+            <button class = "btn btn-success share" onclick="window.open('whatsapp://send?text={{prediction}}')"> Share On WhatsApp </button>
+        </form>
+    </div>
+</body>
+</html>
