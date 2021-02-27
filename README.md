@@ -1,4 +1,4 @@
-# Health_Health_Care
+# Skin Disease Detection through Image Processing Using Deep Learning (Convolutional neural network)
 
 ## Types of Disease 
     nv: 'Melanocytic nevi'
