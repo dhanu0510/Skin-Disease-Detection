@@ -5,7 +5,7 @@
   
   * If you want to download the data and train the Model from begin then start here else start from step 5
   1. install requiremets.txt file first
-  2. Download the data and from given link and Extract all image to single 'input' name folder
+  2. Download the data and from given link and Extract all images to single 'input' name folder
   3. run 'train_data_making.ipynb'
   4. run 'training.ipynb' 
         * For model training we have Created Convolution newural network using Keras and Tensorflow
