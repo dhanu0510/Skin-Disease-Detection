@@ -3,8 +3,8 @@
  * Dataset:- https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DBW86T
 ### 🌟Execute Process: 
   
-  * If you want to download the data and train the Model from begin then start here else start from step 5
   1. install requiremets.txt file first
+  * If you want to download the data and train the Model from begin then start here else start from step 5
   2. Download the data and from given link and Extract all images to single 'input' name folder
   3. run 'train_data_making.ipynb'
   4. run 'training.ipynb' 
@@ -19,10 +19,7 @@
   4. Flask
 
  # 🌟Team Details:
-    Name: NULL
     Members: 
       1. Dhananjay Patel (Silver Oak College of Engineering and Technology)
       2. Darshan Patel (Vishwakarma Government Engineering College)
       3. Darshan Shah (Government Engineering College, Modasa)
-      4. Poojan Mehta (LDRP Institute of Technology and Research)
-      5. Arpit Patel(Lalbhai Dalpatbhai College of Engineering)
