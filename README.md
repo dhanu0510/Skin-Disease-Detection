@@ -3,7 +3,7 @@
  * Dataset:- https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DBW86T
 ### 🌟Execute Process: 
   
-  1. install requiremets.txt file first
+  1. install requiremets.txt file first,
   * If you want to download the data and train the Model from begin then start here else start from step 5
   2. Download the data and from given link and Extract all images to single 'input' name folder
   3. run 'train_data_making.ipynb'
